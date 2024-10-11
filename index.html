@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich dad poor dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem corrupti nam, dignissimos atque facilis amet doloremque unde quo fugit voluptates laboriunde um modi a incidunt reiciendis sapiente velit officiis voluptates laboriosam voluptate tenetur dolore! Quae repellat at repellendus vero odio vel! Iusto quis dicta sint at vero cupiditate, tempore, libero rem, consequatur unde eum ex nihil sunt corporis repudiandae vel tenetur pariatur alias aliquid expedita fuga. Modi autem incidunt cupiditate sit suscipit nisi et iure.</p>
+            <button  onclick="deletebook(event)">delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h1>ADD</h1>
+        <form>
+                <input type="text" placeholder="Book title" id="book-title-input">
+                <input type="text" placeholder="Book author" id="book-author-input">
+                <textarea placeholder="short description" id="book-description-input"></textarea>
+                <button id="add-book">ADD</button>
+                <button id="cancel-book">CANCEL</button>
+        </form>
+    </div> 
+    
+    <button class="button" id="popupbutton">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
